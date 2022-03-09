@@ -35,8 +35,8 @@ console.log(typeof String(undefinedValue)); // string
 
 // type of NaN
 const notNumber = NaN;
-console.log(typeof notNumber) // number
-console.log("Not number: " + typeof String(notNumber)); //string
+console.log(typeof notNumber); // number
+console.log('Not number: ' + typeof String(notNumber)); //string
 
 // NUMBER CONVERSION
 
@@ -46,6 +46,11 @@ console.log('Type of name: ' + typeof name); // string
 console.log(Number(name)); //null;
 // alert(Number(name)); //NaN;
 console.log('Type of name: ' + typeof Number(name)); // number  -->??
+
+// type of empty string;
+const emptyString = '';
+console.log('Empty string: ' + typeof emptyString); //string
+console.log('Value of Empty string: ' + Number(emptyString)); //0
 
 let num = '2';
 console.log(typeof num); // string
@@ -93,13 +98,12 @@ console.log(typeof num4); //boolean
 console.log(Number(num4)); //1
 console.log(typeof Number(num4)); //number
 
-const num5 = false
+const num5 = false;
 console.log(Number(num5)); // 0
 
 const num6 = NaN;
-console.log(typeof num6);     // number
-console.log(Number(num6));  // null
+console.log(typeof num6); // number
+console.log(Number(num6)); // null
 console.log(typeof Number(num6)); //number
 
-
-console.log("add: "+ Number(num5) + Number(num6));
+console.log('add: ' + Number(num5) + Number(num6));
