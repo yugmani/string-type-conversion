@@ -124,3 +124,55 @@ console.log(Boolean(NaN));  //false
 console.log(Boolean(true));   //true
 console.log(Boolean(false))   //false
 console.log(Boolean("0"));  //true
+
+
+// https://javascript.info/operators
+// Tasks
+
+// The postfix and prefix forms
+// What are the final values of all variables a, b, c and d after the code below?
+let a = 1, b = 1;
+
+let c = ++a;  
+console.log(c)  // 2;
+let d = b++;  
+console.log(d)  // 1
+
+// Assignment result
+// What are the values of a and x after the code below?
+let e = 2;
+
+let x = 1 + (e *= 2);
+console.log(x); // 5
+
+// Type conversions
+// What are results of these expressions?
+console.log("" + 1 + 0);    // 10
+console.log("" - 1 + 0); // -1
+console.log(true + false);  // 1
+console.log(6/"3"); // 2 
+console.log("2" * "3");   //6
+console.log(4+5+"px"); //9px
+console.log("$" + 4 + 5);   //$45;
+console.log("4" - 2);   // 2;
+console.log("4px" - 2);   //null
+console.log("-9" + 5);  //-95
+console.log("-9" - 5);  //-14
+console.log(null + 1);  //1
+console.log(undefined + 1);   //null
+console.log("\t \n" - 2);   //-2
+
+// Fix the addition
+// Here’s a code that asks the user for two numbers and shows their sum.
+
+// It works incorrectly. The output in the example below is 12 (for default prompt values).
+
+// Why? Fix it. The result should be 3.
+
+// let m = prompt("First number?", 1);
+// let n = prompt("Second number?", 2);
+// console.log(m + n); // 12
+// m = Number(m);
+// n = +n;
+// console.log(m + n); // 3
+
